@@ -46,20 +46,6 @@ The notebook handles everything:
 
 Data files are saved in `synthetic_data/` and `preprocessed_data/` directories.
 
-## Model
-
-Simple CNN architecture:
-- 3 convolutional blocks (32, 64, 128 filters)
-- Batch normalization and max pooling
-- Fully connected layers with dropout
-- Outputs 2 values (x, y coordinates)
-
-Training config:
-- Loss: MSE
-- Optimizer: Adam (lr=0.001)
-- Batch size: 32
-- Epochs: 25
-
 ## Results
 
 The model achieves near-perfect accuracy since the problem is deterministic with a finite set of 2,500 possible samples. Most predictions are exact or within 1 pixel.
